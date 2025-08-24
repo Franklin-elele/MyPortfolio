@@ -1,7 +1,7 @@
 import codeimg from "../assets/code.png";
 import resume from "../assets/Ebuka-Resume.pdf";
 import cards from "../assets/card.png";
-import bib from "../assets/ Bib.png";
+import bib from "../assets/bib.png";
 import Student from "../assets/Student.png";
 import { useState } from "react";
 import { SiGithub } from "react-icons/si";
