@@ -19,7 +19,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #141E30;
+  background: linear-gradient(135deg, #1E3052, #141E30);
   color: white;
   position: sticky;
   top: 0;
@@ -106,12 +106,12 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 87vh;
-  padding: 100px 20px;
+  padding: 100px 100px;
   background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
   font-family: 'Poppins', sans-serif;
 }
 .hero-section div {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(1.5rem, 4vw, 1rem);
   font-weight: 600;
   margin-top: 20px;
   width: 50%;
@@ -122,7 +122,7 @@ body {
   position: relative;
   display: inline-block;
   color: #475569;
-  height: 1.4em;
+  height: 1.2em;
   vertical-align: bottom;
   overflow: hidden;
   padding-right: 5px;
@@ -220,6 +220,7 @@ div > span > span {
   border: 2px solid #141E30;
   font-weight: bold;
   margin-top: 1rem;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
   background: #141E30;
@@ -336,7 +337,7 @@ div > span > span {
   resize: none;
   margin-bottom: 15px;
 }
-.contact-form button {
+button {
   display: block;
   padding: 12px;
   background: #1E3052;
@@ -348,7 +349,7 @@ div > span > span {
   transition: background 0.3s ease;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.contact-form button:hover {
+ button:hover {
   background: #141E30;
 }
 /* Mobile Contact */
@@ -375,4 +376,53 @@ div > span > span {
 .social-links {
   margin-top: 10px;
   font-size: 1.5rem;
+}
+.CTA {
+  background: linear-gradient(135deg, #1E3052, #141E30);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin: 60px auto;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.17);
+  transition: transform 0.3s ease;
+}
+
+.CTA:hover {
+  transform: translateY(-3px);
+}
+
+.cta-head {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.cta-sub {
+  font-size: 1.125rem;
+  margin-bottom: 28px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.ctaLink {
+  display: inline-block;
+  padding: 12px 20px;
+  color: #1E3052;
+  background: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.ctaLink:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transform: scale(1.05);
 }
